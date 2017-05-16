@@ -1,0 +1,12 @@
+{
+  "name": "is-react",
+  "version": "0.1.1",
+  "description": "Determine if a variable or statement is a React element or component",
+  "main": "index.js",
+  "repository": "https://www.github.com/treyhuffine/is-react",
+  "author": "Trey Huffine <treyhuffine>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.5.4"
+  }
+}
