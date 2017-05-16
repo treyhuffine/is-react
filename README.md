@@ -89,34 +89,34 @@ isReact.compositeTypeElement(header) // false
 All functions return a `boolean`. The primary functions you will most likely
 use are `compatible()`, `element()`, and `component()`.
 
-`isReact.compatible()`
+#### `isReact.compatible()`
 
 Determine if a variable or statement is compatible with React. Valid React
 components and elements return `true`.
 
-`isReact.element()`
+#### `isReact.element()`
 
 Determine if a variable or statement is a React element. Will return `true`
 for both DOM type and Composite type components.
 
-`isReact.component()`
+#### `isReact.component()`
 
 Determine if a variable or statement is a React component. Will return `true`
 for both functional and class components.
 
-`isReact.classComponent()`
+#### `isReact.classComponent()`
 
 Determine if a variable or statement is a React class component.
 
-`isReact.functionComponent()`
+#### `isReact.functionComponent()`
 
 Determine if a variable or statement is a React functional component.
 
-`isReact.DOMTypeElement()`
+#### `isReact.DOMTypeElement()`
 
 Determine if a variable or statement is a React DOM type element.
 
-`isReact.compositeTypeElement()`
+#### `isReact.compositeTypeElement()`
 
 Determine if a variable or statement is a React Composite type element.
 
