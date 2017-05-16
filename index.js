@@ -46,5 +46,6 @@ isReact.component = component;
 isReact.element = element;
 isReact.DOMTypeElement = DOMTypeElement;
 isReact.compositeTypeElement = compositeTypeElement;
+isReact.compatible = compatible;
 
 module.exports = isReact;
