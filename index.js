@@ -22,16 +22,20 @@ function component(component) {
   );
 }
 
-function element(element) {
-  return React.isValidElement(element);
+function element(typeElement) {
+  return React.isValidElement(typeElement);
 }
 
-function DOMTypeElement(element) {
-  return isElement(element) && typeof element.type === 'string';
+function DOMTypeElement(typeElement) {
+  return element(typeElement) && typeof typeElement.type === 'string';
 }
 
-function compositeTypeElement(element) {
-  return isElement(element) && typeof element.type === 'function';
+function compositeTypeElement(typeElement) {
+  return element(typeElement) && typeof typeElement.type === 'function';
+}
+
+function compatible(item) {
+  return element(item) || component(item);
 }
 
 var isReact = {};
