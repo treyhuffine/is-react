@@ -11,7 +11,30 @@ for an understanding of JSX syntax.
 `yarn add is-react` or `npm i --save is-react` to use the package.
 
 ## Examples
+
+Real world:
 ```
+import React from 'react';
+import isReact from 'isReact';
+
+const MyImageComponent = ({ SomeProp }) => {
+    if (typeof SomeProp === 'string') {
+        // assume it's the src for an image
+        return <img src={ SomeProp } />
+    } else if (isReact.component(SomeProp)) {
+        return <SomeProp />;
+    } else if (isReact.element(SomeProp)) {
+        return SomeProp;
+    }
+
+    return null;
+}
+```
+______________________
+
+Samples:
+```
+
 // Class Component
 class Foo extends React.Component {
   render(){

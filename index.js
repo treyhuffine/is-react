@@ -8,6 +8,7 @@ function classComponent(component) {
   );
 }
 
+// Ensure compatability with transformed code
 function functionComponent(component) {
   return (
     typeof component === 'function' &&
