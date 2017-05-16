@@ -11,7 +11,12 @@ function classComponent(component) {
 function functionComponent(component) {
   return (
     typeof component === 'function' &&
-    String(component).includes('return React.createElement')
+    String(component).includes('return') &&
+    (
+      String(component).includes('React.') ||
+      String(component).includes('react.')
+    ) &&
+    String(component).includes('.createElement')
   );
 }
 
