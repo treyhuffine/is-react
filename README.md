@@ -1,5 +1,4 @@
-# Is React?
------------------------------------------
+# Is React
 
 ## ![Is React?](is-react.png)
 A library to determine if a variable or a statement is a React element or component.
@@ -89,5 +88,7 @@ Determine if a variable or statement is a React DOM type element.
 
 `isReact.compositeTypeElement()`
 Determine if a variable or statement is a React Composite type element.
+
+## Thanks!
 
 Inspired by this Stackoverflow [answer](http://stackoverflow.com/a/41658173)
