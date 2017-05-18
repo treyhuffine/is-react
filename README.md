@@ -13,7 +13,7 @@ for an understanding of JSX syntax.
 ## Examples
 
 Real world:
-```
+```javascript
 import React from 'react';
 import isReact from 'isReact';
 
@@ -33,7 +33,7 @@ const MyImageComponent = ({ SomeProp }) => {
 ______________________
 
 Samples:
-```
+```javascript
 
 // Class Component
 class Foo extends React.Component {
