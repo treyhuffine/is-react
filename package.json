@@ -1,6 +1,6 @@
 {
   "name": "is-react",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Determine if a variable or statement is a React element or component",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,15 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-test-renderer": "^15.5.4"
-  }
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "element",
+    "component",
+    "determine",
+    "compatible",
+    "check",
+    "is"
+  ]
 }
