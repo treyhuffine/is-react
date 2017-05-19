@@ -3,8 +3,8 @@
 ![Is React?](is-react.png)
 
 A library to determine if a variable or a statement is a React element or component.
-This article [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describing elements and components and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
-for an understanding of JSX syntax.
+For a more thorough understanding, this  [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
+gives an understanding of the JSX syntax.
 
 ## Install
 
