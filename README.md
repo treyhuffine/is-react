@@ -1,12 +1,10 @@
+# Is React
+
 <p align="center">
   <a href="https://reacttraining.com/react-router/">
     <img alt="react-router" src="is-react.png" width="300">
   </a>
 </p>
-
-<h3 align="center">
-  Is React
-</h3>
 
 <p align="center">
   Determine if a variable or statement is a valid element or component in <a href="https://facebook.github.io/react">React</a>
