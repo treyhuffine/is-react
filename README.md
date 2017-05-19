@@ -1,8 +1,8 @@
 # Is React
 
 <p align="center">
-  <a href="https://github.com/treyhuffine/is-react/blob/master/is-react.png">
-    <img alt="is-react?" src="is-react.png" width="300">
+  <a href="https://www.npmjs.com/package/is-react">
+    <img alt="is-react?" src="https://github.com/treyhuffine/is-react/raw/master/is-react.png" width="300">
   </a>
 </p>
 
