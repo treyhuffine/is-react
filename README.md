@@ -1,6 +1,22 @@
-# Is React
+<p align="center">
+  <a href="https://reacttraining.com/react-router/">
+    <img alt="react-router" src="is-react.png" width="300">
+  </a>
+</p>
 
-![Is React?](is-react.png)
+<h3 align="center">
+  Is React
+</h3>
+
+<p align="center">
+  Determine if a variable or statement is a valid element or component in <a href="https://facebook.github.io/react">React</a>
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/is-react"><img src="https://img.shields.io/npm/v/is-react.svg?style=flat-square"></a>
+  <a href="https://www.npmjs.com/package/is-react"><img src="https://img.shields.io/npm/dm/is-react.svg?style=flat-square"></a>
+  <a href="https://travis-ci.org/treyhuffine/is-react"><img src="https://img.shields.io/travis/treyhuffine/is-react/master.svg?style=flat-square"></a>
+</p>
 
 A library to determine if a variable or a statement is a React element or component.
 For a more thorough understanding, this  [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
