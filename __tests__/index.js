@@ -19,41 +19,41 @@ const bar = <Bar />;
 const header = <h1>Title</h1>;
 
 it('Identifies a Foo class component', () => {
-    isReact.compatible(Foo) // true
-    isReact.component(Foo); // true
-    isReact.classComponent(Foo); // true
-    isReact.functionComponent(Foo); // false
-    isReact.element(Foo); // false
+  isReact.compatible(Foo) // true
+  isReact.component(Foo); // true
+  isReact.classComponent(Foo); // true
+  isReact.functionComponent(Foo); // false
+  isReact.element(Foo); // false
 });
 
 it('Identifies a <Foo/> composite element', () => {
-    isReact.compatible(Foo) // true
-    isReact.component(Foo); // true
-    isReact.classComponent(Foo); // true
-    isReact.functionComponent(Foo); // false
-    isReact.element(Foo); // false
+  isReact.compatible(Foo) // true
+  isReact.component(Foo); // true
+  isReact.classComponent(Foo); // true
+  isReact.functionComponent(Foo); // false
+  isReact.element(Foo); // false
 });
 
 it('Identifies a Bar function component', () => {
-    isReact.compatible(Bar) // true
-    isReact.component(Bar); // true
-    isReact.classComponent(Bar); // false
-    isReact.functionComponent(Bar); // true
-    isReact.element(Bar); // false
+  isReact.compatible(Bar) // true
+  isReact.component(Bar); // true
+  isReact.classComponent(Bar); // false
+  isReact.functionComponent(Bar); // true
+  isReact.element(Bar); // false
 });
 
 it('Identifies a <Bar/> composite element', () => {
-    isReact.compatible(Bar) // true
-    isReact.component(Bar); // true
-    isReact.classComponent(Bar); // false
-    isReact.functionComponent(Bar); // true
-    isReact.element(Bar); // false
+  isReact.compatible(Bar) // true
+  isReact.component(Bar); // true
+  isReact.classComponent(Bar); // false
+  isReact.functionComponent(Bar); // true
+  isReact.element(Bar); // false
 });
 
 it('Identifies a DOM type element ', () => {
-    isReact.compatible(header) // true
-    isReact.component(header); // false
-    isReact.element(header); // true
-    isReact.DOMTypeElement(header) // true
-    isReact.compositeTypeElement(header) // false
+  isReact.compatible(header) // true
+  isReact.component(header); // false
+  isReact.element(header); // true
+  isReact.DOMTypeElement(header) // true
+  isReact.compositeTypeElement(header) // false
 });
