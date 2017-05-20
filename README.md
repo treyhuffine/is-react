@@ -29,7 +29,7 @@ gives an understanding of the JSX syntax.
 Real world:
 ```javascript
 import React from 'react';
-import isReact from 'isReact';
+import isReact from 'is-react';
 
 const MyImageComponent = ({ SomeProp }) => {
     if (typeof SomeProp === 'string') {
