@@ -1,5 +1,4 @@
 const React = require('react');
-const { shallow } = require('enzyme');
 const isReact = require('../');
 
 // Class Component
@@ -18,42 +17,72 @@ const bar = <Bar />;
 // React Element
 const header = <h1>Title</h1>;
 
-it('Identifies a Foo class component', () => {
-  isReact.compatible(Foo) // true
-  isReact.component(Foo); // true
-  isReact.classComponent(Foo); // true
-  isReact.functionComponent(Foo); // false
-  isReact.element(Foo); // false
+it('Classifies class component', () => {
+  expect(isReact.compatible(Foo)).toBe(true);
+  expect(isReact.component(Foo)).toBe(true);
+  expect(isReact.classComponent(Foo)).toBe(true);
+  expect(isReact.functionComponent(Foo)).toBe(false);
+  expect(isReact.element(Foo)).toBe(false);
 });
 
-it('Identifies a <Foo/> composite element', () => {
-  isReact.compatible(Foo) // true
-  isReact.component(Foo); // true
-  isReact.classComponent(Foo); // true
-  isReact.functionComponent(Foo); // false
-  isReact.element(Foo); // false
+it('Classifies composite element from class component', () => {
+  expect(isReact.compatible(Foo)).toBe(true);
+  expect(isReact.component(Foo)).toBe(true);
+  expect(isReact.classComponent(Foo)).toBe(true);
+  expect(isReact.functionComponent(Foo)).toBe(false);
+  expect(isReact.element(Foo)).toBe(false);
 });
 
-it('Identifies a Bar function component', () => {
-  isReact.compatible(Bar) // true
-  isReact.component(Bar); // true
-  isReact.classComponent(Bar); // false
-  isReact.functionComponent(Bar); // true
-  isReact.element(Bar); // false
+it('Classifies function component', () => {
+  expect(isReact.compatible(Bar)).toBe(true);
+  expect(isReact.component(Bar)).toBe(true);
+  expect(isReact.classComponent(Bar)).toBe(false);
+  expect(isReact.functionComponent(Bar)).toBe(true);
+  expect(isReact.element(Bar)).toBe(false);
 });
 
-it('Identifies a <Bar/> composite element', () => {
-  isReact.compatible(Bar) // true
-  isReact.component(Bar); // true
-  isReact.classComponent(Bar); // false
-  isReact.functionComponent(Bar); // true
-  isReact.element(Bar); // false
+it('Classifies composite element from function component', () => {
+  expect(isReact.compatible(Bar)).toBe(true);
+  expect(isReact.component(Bar)).toBe(true);
+  expect(isReact.classComponent(Bar)).toBe(false);
+  expect(isReact.functionComponent(Bar)).toBe(true);
+  expect(isReact.element(Bar)).toBe(false);
 });
 
-it('Identifies a DOM type element ', () => {
-  isReact.compatible(header) // true
-  isReact.component(header); // false
-  isReact.element(header); // true
-  isReact.DOMTypeElement(header) // true
-  isReact.compositeTypeElement(header) // false
+it('Classifies DOM type element', () => {
+  expect(isReact.compatible(header)).toBe(true);
+  expect(isReact.component(header)).toBe(false);
+  expect(isReact.element(header)).toBe(true);
+  expect(isReact.DOMTypeElement(header)).toBe(true);
+  expect(isReact.compositeTypeElement(header)).toBe(false);
+});
+
+describe('Native JavaScript', () => {
+  it('Object is not valid React', () => {
+    expect(isReact.compatible({})).toBe(false);
+  });
+
+  it('Array is not valid React', () => {
+    expect(isReact.compatible({})).toBe(false);
+  });
+
+  it('Number is not valid React', () => {
+    expect(isReact.compatible(1)).toBe(false);
+  });
+
+  it('String is not valid React', () => {
+    expect(isReact.compatible('Hello, world')).toBe(false);
+  });
+
+  it('Function is not valid React', () => {
+    expect(isReact.compatible(() => {})).toBe(false);
+  });
+
+  it('null is not valid React', () => {
+    expect(isReact.compatible(null)).toBe(false);
+  });
+
+  it('undefined is not valid React', () => {
+    expect(isReact.compatible(undefined)).toBe(false);
+  });
 });
