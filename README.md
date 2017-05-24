@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  Determine if a variable or statement is a valid element or component in <a href="https://facebook.github.io/react">React</a>
+  Determine if a variable or expression is a valid element or component in <a href="https://facebook.github.io/react">React</a>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
   <a href="https://travis-ci.org/treyhuffine/is-react"><img src="https://img.shields.io/travis/treyhuffine/is-react/master.svg?style=flat-square"></a>
 </p>
 
-A library to determine if a variable or a statement is a React element or component.
+A library to determine if a variable or a expression is a React element or component.
 For a more thorough understanding, this  [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
 gives an understanding of the JSX syntax.
 
@@ -105,34 +105,34 @@ use are `compatible()`, `element()`, and `component()`.
 
 #### `isReact.compatible()`
 
-Determine if a variable or statement is compatible with React. Valid React
+Determine if a variable or expression is compatible with React. Valid React
 components and elements return `true`.
 
 #### `isReact.element()`
 
-Determine if a variable or statement is a React element. Will return `true`
+Determine if a variable or expression is a React element. Will return `true`
 for both DOM type and Composite type components.
 
 #### `isReact.component()`
 
-Determine if a variable or statement is a React component. Will return `true`
+Determine if a variable or expression is a React component. Will return `true`
 for both functional and class components.
 
 #### `isReact.classComponent()`
 
-Determine if a variable or statement is a React class component.
+Determine if a variable or expression is a React class component.
 
 #### `isReact.functionComponent()`
 
-Determine if a variable or statement is a React functional component.
+Determine if a variable or expression is a React functional component.
 
 #### `isReact.DOMTypeElement()`
 
-Determine if a variable or statement is a React DOM type element.
+Determine if a variable or expression is a React DOM type element.
 
 #### `isReact.compositeTypeElement()`
 
-Determine if a variable or statement is a React Composite type element.
+Determine if a variable or expression is a React Composite type element.
 
 ## Thanks!
 
