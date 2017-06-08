@@ -1,6 +1,6 @@
 {
   "name": "is-react",
-  "version": "0.1.14",
+  "version": "1.0.0",
   "description": "Determine if a variable or expression is a React element or component",
   "main": "index.js",
   "scripts": {
