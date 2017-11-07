@@ -20,6 +20,8 @@ A library to determine if a variable or a expression is a React element or compo
 For a more thorough understanding, this  [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
 gives an understanding of the JSX syntax.
 
+### Sponsored by [gitconnected](https://gitconnected.com)
+
 ## Install
 
 `yarn add is-react` or `npm i --save is-react` to use the package.
