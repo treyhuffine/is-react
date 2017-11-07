@@ -1,6 +1,6 @@
 {
   "name": "is-react",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Determine if a variable or expression is a React element or component",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "Trey Huffine <treyhuffine>",
   "license": "MIT",
   "dependencies": {
-    "react": "^15.5.4"
+    "react": "^16.0.0"
   },
   "devDependencies": {
     "babel-jest": "^20.0.3",
@@ -18,8 +18,8 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^2.8.2",
     "jest": "^20.0.3",
-    "react-dom": "^15.5.4",
-    "react-test-renderer": "^15.5.4"
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0"
   },
   "keywords": [
     "react",
