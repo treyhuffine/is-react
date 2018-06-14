@@ -17,10 +17,12 @@
 </p>
 
 A library to determine if a variable or a expression is a React element or component.
-For a more thorough understanding, this  [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
+For a more thorough understanding, this [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
 gives an understanding of the JSX syntax.
 
-### Sponsored by [gitconnected](https://gitconnected.com)
+### Sponsored by [gitconnected - The Developer Learning Community](https://gitconnected.com)
+
+### Sponsored by [BlockAce - The Best Blockchain Jobs Board](https://blockace.io)
 
 ## Install
 
@@ -29,31 +31,33 @@ gives an understanding of the JSX syntax.
 ## Examples
 
 Real world:
+
 ```javascript
 import React from 'react';
 import isReact from 'is-react';
 
 const MyImageComponent = ({ SomeProp }) => {
-    if (typeof SomeProp === 'string') {
-        // assume it's the src for an image
-        return <img src={ SomeProp } />
-    } else if (isReact.component(SomeProp)) {
-        return <SomeProp />;
-    } else if (isReact.element(SomeProp)) {
-        return SomeProp;
-    }
+  if (typeof SomeProp === 'string') {
+    // assume it's the src for an image
+    return <img src={SomeProp} />;
+  } else if (isReact.component(SomeProp)) {
+    return <SomeProp />;
+  } else if (isReact.element(SomeProp)) {
+    return SomeProp;
+  }
 
-    return null;
-}
+  return null;
+};
 ```
-______________________
+
+---
 
 Samples:
-```javascript
 
+```javascript
 // Class Component
 class Foo extends React.Component {
-  render(){
+  render() {
     return <h1>Hello</h1>;
   }
 }
@@ -61,45 +65,48 @@ class Foo extends React.Component {
 const foo = <Foo />;
 
 //Functional Component
-function Bar (props) { return <h1>World</h1> }
+function Bar(props) {
+  return <h1>World</h1>;
+}
 const bar = <Bar />;
 
 // React Element
 const header = <h1>Title</h1>;
 
 // Check
-isReact.compatible(Foo) // true
+isReact.compatible(Foo); // true
 isReact.component(Foo); // true
 isReact.classComponent(Foo); // true
 isReact.functionComponent(Foo); // false
 isReact.element(Foo); // false
 
-isReact.compatible(<Foo />) // true
-isReact.component(<Foo />) // false
-isReact.element(<Foo />) // true
-isReact.DOMTypeElement(<Foo />) // false
-isReact.compositeTypeElement(<Foo />) // true
+isReact.compatible(<Foo />); // true
+isReact.component(<Foo />); // false
+isReact.element(<Foo />); // true
+isReact.DOMTypeElement(<Foo />); // false
+isReact.compositeTypeElement(<Foo />); // true
 
-isReact.compatible(Bar) // true
+isReact.compatible(Bar); // true
 isReact.component(Bar); // true
 isReact.classComponent(Bar); // false
 isReact.functionComponent(Bar); // true
 isReact.element(Bar); // false
 
-isReact.compatible(<Bar />) // true
-isReact.component(<Bar />) // false
-isReact.element(<Bar />) // true
-isReact.DOMTypeElement(<Bar />) // false
-isReact.compositeTypeElement(<Bar />) // true
+isReact.compatible(<Bar />); // true
+isReact.component(<Bar />); // false
+isReact.element(<Bar />); // true
+isReact.DOMTypeElement(<Bar />); // false
+isReact.compositeTypeElement(<Bar />); // true
 
-isReact.compatible(header) // true
+isReact.compatible(header); // true
 isReact.component(header); // false
 isReact.element(header); // true
-isReact.DOMTypeElement(header) // true
-isReact.compositeTypeElement(header) // false
+isReact.DOMTypeElement(header); // true
+isReact.compositeTypeElement(header); // false
 ```
 
 ## API
+
 `import isReact from 'is-react'` to use the package
 
 All functions return a `boolean`. The primary functions you will most likely
