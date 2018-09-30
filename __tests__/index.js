@@ -3,16 +3,19 @@ const isReact = require('../');
 
 // Class Component
 class Foo extends React.Component {
-  render(){
-      return <h1>Hello</h1>;
+  render() {
+    return <h1>Hello</h1>;
   }
 }
 
 const foo = <Foo />;
 
 //Functional Component
-function Bar (props) { return <h1>World</h1> }
+function Bar(props) {
+  return <h1>World</h1>;
+}
 const bar = <Bar />;
+const Func = () => <h2>implicit</h2>;
 
 // React Element
 const header = <h1>Title</h1>;
@@ -39,6 +42,11 @@ it('Classifies function component', () => {
   expect(isReact.classComponent(Bar)).toBe(false);
   expect(isReact.functionComponent(Bar)).toBe(true);
   expect(isReact.element(Bar)).toBe(false);
+  expect(isReact.compatible(Func)).toBe(true);
+  expect(isReact.component(Func)).toBe(true);
+  expect(isReact.classComponent(Func)).toBe(false);
+  expect(isReact.functionComponent(Func)).toBe(true);
+  expect(isReact.element(Func)).toBe(false);
 });
 
 it('Classifies composite element from function component', () => {
