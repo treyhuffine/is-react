@@ -1,10 +1,10 @@
 var React = require('react');
 
+const FUNCTION_REGEX = /react(\d+)?./i;
+
 function classComponent(component) {
   return (
-    typeof component === 'function' &&
-    component.prototype &&
-    !!component.prototype.isReactComponent
+    typeof component === 'function' && component.prototype && !!component.prototype.isReactComponent
   );
 }
 
@@ -13,19 +13,13 @@ function functionComponent(component) {
   return (
     typeof component === 'function' &&
     String(component).includes('return') &&
-    (
-      String(component).includes('React.') ||
-      String(component).includes('react.')
-    ) &&
+    !!String(component).match(FUNCTION_REGEX) &&
     String(component).includes('.createElement')
   );
 }
 
 function component(component) {
-  return (
-    classComponent(component) ||
-    functionComponent(component)
-  );
+  return classComponent(component) || functionComponent(component);
 }
 
 function element(typeElement) {
