@@ -22,8 +22,6 @@ gives an understanding of the JSX syntax.
 
 ### Sponsored by [gitconnected - The Developer Learning Community](https://gitconnected.com)
 
-### Sponsored by [BlockAce - The Best Blockchain Jobs Board](https://blockace.io)
-
 ## Install
 
 `yarn add is-react` or `npm i --save is-react` to use the package.
