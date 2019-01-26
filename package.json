@@ -1,6 +1,7 @@
 {
   "name": "is-react",
-  "version": "1.3.2",
+  "version": "1.3.3",
+  "homepage": "https://gitconnected.com/learn",
   "description": "Determine if a variable or expression is a React element or component",
   "main": "index.js",
   "scripts": {
