@@ -20,7 +20,9 @@ A library to determine if a variable or an expression is a React element or comp
 For a more thorough understanding, this [article](https://facebook.github.io/react/blog/2015/12/18/react-components-elements-and-instances.html) describes elements and components in React, and this [article](https://facebook.github.io/react/docs/jsx-in-depth.html)
 gives an understanding of the JSX syntax.
 
-### Sponsored by [gitconnected - The Developer Learning Community](https://gitconnected.com)
+### Sponsored by:
+- [Skilled.dev - Coding Interview Course](https://skilled.dev)
+- [gitconnected - The Developer Learning Community](https://gitconnected.com)
 
 ## Install
 
