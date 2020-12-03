@@ -1,7 +1,7 @@
 {
   "name": "is-react",
-  "version": "1.5.2",
-  "homepage": "https://gitconnected.com/learn",
+  "version": "1.5.3",
+  "homepage": "https://www.github.com/treyhuffine/is-react",
   "description": "Determine if a variable or expression is a React element or component",
   "main": "index.js",
   "scripts": {
