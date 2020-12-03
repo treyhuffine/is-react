@@ -14,6 +14,7 @@
   <a href="https://www.npmjs.com/package/is-react"><img src="https://img.shields.io/npm/v/is-react.svg?style=flat-square"></a>
   <a href="https://www.npmjs.com/package/is-react"><img src="https://img.shields.io/npm/dm/is-react.svg?style=flat-square"></a>
   <a href="https://travis-ci.org/treyhuffine/is-react"><img src="https://img.shields.io/travis/treyhuffine/is-react/master.svg?style=flat-square"></a>
+  <a href="https://packagephobia.com/result?p=is-react"><img alt="install size" src="https://packagephobia.com/badge?p=is-react"></a>
 </p>
 
 A library to determine if a variable or an expression is a React element or component.
