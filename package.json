@@ -15,7 +15,7 @@
   "author": "Trey Huffine <treyhuffine>",
   "license": "MIT",
   "dependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -25,8 +25,8 @@
     "babel-jest": "^26.6.3",
     "enzyme": "^3.6.0",
     "jest": "^26.6.3",
-    "react-dom": "^16.13.1",
-    "react-test-renderer": "^16.13.1"
+    "react-dom": "^17.0.1",
+    "react-test-renderer": "^17.0.1"
   },
   "keywords": [
     "react",
