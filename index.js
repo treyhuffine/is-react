@@ -14,7 +14,10 @@ function functionComponent(component) {
     typeof component === 'function' &&
     String(component).includes('return') &&
     !!String(component).match(FUNCTION_REGEX) &&
-    String(component).includes('.createElement')
+    // Webpack create syntax like this:
+    // /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"path\" ...
+    // String(component).includes('.createElement')
+    String(component).includes('createElement')
   );
 }
 
