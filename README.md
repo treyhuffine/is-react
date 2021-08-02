@@ -25,6 +25,8 @@ gives an understanding of the JSX syntax.
 - [Skilled.dev - Coding Interview Course](https://skilled.dev)
 - [gitconnected - The Developer Learning Community](https://gitconnected.com)
 
+Note: The React team now offers a package [react-is](https://www.npmjs.com/package/react-is) that provides similar functionality. I recommend checking that out as well to see if it's more suited for your needs.
+
 ## Install
 
 `yarn add is-react` or `npm i --save is-react` to use the package.
