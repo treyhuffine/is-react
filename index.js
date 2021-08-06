@@ -10,11 +10,21 @@ function classComponent(component) {
 
 // Ensure compatability with transformed code
 function functionComponent(component) {
+  const componentStr = String(component)
+
   return (
     typeof component === 'function' &&
-    String(component).includes('return') &&
-    !!String(component).match(FUNCTION_REGEX) &&
-    String(component).includes('.createElement')
+    // componentStr.includes('return') &&
+    !!componentStr.match(FUNCTION_REGEX) &&
+    // Webpack create syntax like this:
+    // /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"path\" ...
+    // String(component).includes('.createElement')
+    (
+      componentStr.includes('createElement')
+      // new automatic runtime
+      || componentStr.includes('react_jsx_runtime') // react/jsx-runtime
+      || componentStr.includes('react_jsx_dev_runtime') // react/jsx-dev-runtime
+    )
   );
 }
 
